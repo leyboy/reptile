@@ -2,31 +2,31 @@ package com.reptile.bean;
 
 /**
  * @author LiuEnYuan
- * @version 1.1 封装了获取京东书的实体类
+ * @version 1.1 灏佽浜嗕含涓滀功绫嶆暟鎹殑 Book Model
  **/
 public class Book {
 
-	private Integer bookId;
+	private String bookId;
 	private String bookName;
-	private Double bookPrice;
+	private String bookPrice;
 
 	public Book() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Book(Integer bookId, String bookName, Double bookPrice) {
+	public Book(String bookId, String bookName, String bookPrice) {
 		super();
 		this.bookId = bookId;
 		this.bookName = bookName;
 		this.bookPrice = bookPrice;
 	}
 
-	public Integer getBookId() {
+	public String getBookId() {
 		return bookId;
 	}
 
-	public void setBookId(Integer bookId) {
+	public void setBookId(String bookId) {
 		this.bookId = bookId;
 	}
 
@@ -38,11 +38,11 @@ public class Book {
 		this.bookName = bookName;
 	}
 
-	public Double getBookPrice() {
+	public String getBookPrice() {
 		return bookPrice;
 	}
 
-	public void setBookPrice(Double bookPrice) {
+	public void setBookPrice(String bookPrice) {
 		this.bookPrice = bookPrice;
 	}
 

@@ -5,12 +5,21 @@
 	<artifactId>reptile</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
+		<junit.version>4.9</junit.version>
 		<log4j.version>1.2.16</log4j.version>
-		<httpClient.version>3.1</httpClient.version>
+		<httpClient.version>4.5</httpClient.version>
 		<dbcp.version>1.4</dbcp.version>
-		<fastjson.version>1.1.29</fastjson.version>
+		<jsoup.version>1.10.3</jsoup.version>
+		<mysql.version>5.1.41</mysql.version>
 	</properties>
 	<dependencies>
+		<!-- junit jar -->
+		<dependency>
+			<artifactId>junit</artifactId>
+			<groupId>junit</groupId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
 		<!-- log4j jar -->
 		<dependency>
 			<groupId>log4j</groupId>
@@ -26,20 +35,38 @@
 			<version>${dbcp.version}</version>
 		</dependency>
 
-		<!-- fastjson jar -->
+		<!-- jsoup jar -->
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>${fastjson.version}</version>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>${jsoup.version}</version>
 		</dependency>
+
 
 		<!-- httpclient jar -->
 
+
 		<dependency>
-			<groupId>commons-httpclient</groupId>
-			<artifactId>commons-httpclient</artifactId>
-			<version>3.1</version>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5</version>
 		</dependency>
+
+
+		<!-- mysql jar -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-dbutils/commons-dbutils -->
+		<dependency>
+			<groupId>commons-dbutils</groupId>
+			<artifactId>commons-dbutils</artifactId>
+			<version>1.5</version>
+		</dependency>
+
 
 	</dependencies>
 </project>
